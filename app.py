@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, render_template_string
 from math_utils import add, subtract
 
@@ -51,4 +52,5 @@ def calculator():
     return render_template_string(HTML_TEMPLATE, result=result)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)

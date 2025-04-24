@@ -1,4 +1,4 @@
-name: CI
+![CI](https://github.com/Chakri199/simple-ci-math/actions/workflows/ci.yml/badge.svg)
 
 on: [push, pull_request]
 
